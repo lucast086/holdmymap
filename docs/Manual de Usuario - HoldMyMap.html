@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual de Usuario - HoldMyMap</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      color: #333;
+    }
+    h1 {
+      color: #2563eb;
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 0;
+    }
+    .subtitle {
+      text-align: center;
+      color: #666;
+      font-size: 1.2em;
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #1e40af;
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 10px;
+      margin-top: 40px;
+    }
+    h3 {
+      color: #1e3a5f;
+      margin-top: 25px;
+    }
+    .image-placeholder {
+      background: #f0f4f8;
+      border: 2px dashed #94a3b8;
+      border-radius: 8px;
+      padding: 40px 20px;
+      text-align: center;
+      color: #64748b;
+      margin: 20px 0;
+      font-style: italic;
+    }
+    .image-placeholder::before {
+      content: "📷 ";
+    }
+    .tip {
+      background: #dbeafe;
+      border-left: 4px solid #2563eb;
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .warning {
+      background: #fef3c7;
+      border-left: 4px solid #f59e0b;
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    ol, ul {
+      padding-left: 25px;
+    }
+    li {
+      margin: 8px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #e2e8f0;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background: #f1f5f9;
+    }
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    pre {
+      background: #1e293b;
+      color: #e2e8f0;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    .step-number {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      background: #2563eb;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 28px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .button-example {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: 500;
+    }
+    .button-example.secondary {
+      background: #f1f5f9;
+      color: #333;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #e2e8f0;
+      margin: 40px 0;
+    }
+    .footer {
+      text-align: center;
+      color: #64748b;
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #e2e8f0;
+    }
+    @media print {
+      body {
+        padding: 20px;
+      }
+      h2 {
+        page-break-before: always;
+      }
+      h2:first-of-type {
+        page-break-before: avoid;
+      }
+      .image-placeholder {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🗺️ HoldMyMap</h1>
+  <p class="subtitle">Manual de Usuario<br>App de Puntos de Agua para Bomberos Voluntarios</p>
+
+  <hr>
+
+  <h2>1. Introducción</h2>
+  <p>HoldMyMap es una aplicación web diseñada para bomberos voluntarios que permite ubicar rápidamente puntos de agua y otros recursos en zonas rurales.</p>
+
+  <p><strong>Características principales:</strong></p>
+  <ul>
+    <li>✅ Búsqueda rápida de puntos por nombre</li>
+    <li>✅ Navegación directa con Google Maps</li>
+    <li>✅ Funciona sin internet (modo offline)</li>
+    <li>✅ Se puede instalar en el celular como app</li>
+  </ul>
+
+  <h2>2. Acceder a la Aplicación</h2>
+
+  <h3>Desde el navegador</h3>
+  <ol>
+    <li>Abrir el navegador (Chrome, Safari, Firefox)</li>
+    <li>Ingresar la dirección: <strong>holdmymap.vercel.app</strong></li>
+    <li>Ingresar el código de grupo proporcionado</li>
+  </ol>
+
+  <div class="image-placeholder">IMAGEN: Pantalla de inicio con campo de código de grupo</div>
+
+  <h2>3. Instalar en el Celular (Acceso Directo)</h2>
+  <p>La aplicación se puede instalar como si fuera una app nativa, sin necesidad de tiendas de aplicaciones.</p>
+
+  <h3>📱 En Android (Chrome)</h3>
+  <ol>
+    <li>Abrir <strong>holdmymap.vercel.app</strong> en Chrome</li>
+    <li>Tocar el menú <strong>⋮</strong> (tres puntos arriba a la derecha)</li>
+    <li>Seleccionar <strong>"Agregar a pantalla de inicio"</strong> o <strong>"Instalar aplicación"</strong></li>
+    <li>Confirmar tocando <strong>"Agregar"</strong></li>
+    <li>El ícono aparecerá en tu pantalla de inicio</li>
+  </ol>
+
+  <div class="image-placeholder">IMAGEN: Menú de Chrome mostrando "Agregar a pantalla de inicio"</div>
+
+  <h3>🍎 En iPhone (Safari)</h3>
+  <ol>
+    <li>Abrir <strong>holdmymap.vercel.app</strong> en Safari</li>
+    <li>Tocar el botón <strong>Compartir</strong> (cuadrado con flecha hacia arriba ↑)</li>
+    <li>Desplazar hacia abajo y tocar <strong>"Agregar a inicio"</strong></li>
+    <li>Tocar <strong>"Agregar"</strong> en la esquina superior derecha</li>
+    <li>El ícono aparecerá en tu pantalla de inicio</li>
+  </ol>
+
+  <div class="image-placeholder">IMAGEN: Opción "Agregar a inicio" en Safari de iPhone</div>
+
+  <div class="tip">
+    <strong>💡 Tip:</strong> Una vez instalada, la app se abre en pantalla completa sin barras del navegador, como una app normal.
+  </div>
+
+  <h2>4. Usar la Aplicación</h2>
+
+  <h3>4.1 Buscar un Punto</h3>
+  <ol>
+    <li>En la pantalla principal, verás la lista de todos los puntos</li>
+    <li>Usa el campo de búsqueda 🔍 para filtrar por nombre</li>
+    <li>Los resultados se actualizan mientras escribes</li>
+  </ol>
+
+  <div class="image-placeholder">IMAGEN: Lista de puntos con campo de búsqueda activo</div>
+
+  <h3>4.2 Navegar a un Punto</h3>
+  <ol>
+    <li>Encuentra el punto deseado en la lista</li>
+    <li>Toca el botón <span class="button-example">Ir con Maps</span></li>
+    <li>Se abrirá Google Maps con la ruta hacia el punto</li>
+  </ol>
+
+  <div class="image-placeholder">IMAGEN: Tarjeta de punto mostrando botón "Ir con Maps"</div>
+
+  <h3>4.3 Agregar un Punto Nuevo</h3>
+  <ol>
+    <li>Tocar el botón <span class="button-example">+ Agregar punto</span> en la parte inferior</li>
+    <li>Completar el formulario:
+      <ul>
+        <li><strong>Nombre:</strong> Nombre del punto (obligatorio)</li>
+        <li><strong>Descripción:</strong> Detalles como capacidad de agua, tipo de acceso, etc.</li>
+        <li><strong>Ubicación:</strong> Puedes elegir una de estas opciones:
+          <ul>
+            <li>Pegar un link de Google Maps</li>
+            <li>Tocar "📍 Usar mi ubicación actual"</li>
+            <li>Ingresar coordenadas manualmente</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Tocar <strong>"Guardar"</strong></li>
+  </ol>
+
+  <div class="image-placeholder">IMAGEN: Formulario de agregar punto con campos completados</div>
+
+  <h3>4.4 Editar o Eliminar un Punto</h3>
+  <ol>
+    <li>En la tarjeta del punto, tocar <span class="button-example secondary">Editar</span></li>
+    <li>Modificar los datos necesarios</li>
+    <li>Tocar <strong>"Guardar cambios"</strong> o <strong>"Eliminar punto"</strong></li>
+  </ol>
+
+  <h2>5. Importar Puntos desde Excel/CSV</h2>
+  <p>Si tienes una lista de puntos en Excel, puedes importarlos masivamente.</p>
+
+  <h3>Preparar el archivo</h3>
+  <p>El archivo debe tener formato CSV con estas columnas:</p>
+  <table>
+    <tr>
+      <th>Columna</th>
+      <th>Descripción</th>
+      <th>Obligatorio</th>
+    </tr>
+    <tr>
+      <td>Nombre</td>
+      <td>Nombre del punto</td>
+      <td>Sí</td>
+    </tr>
+    <tr>
+      <td>Detalles</td>
+      <td>Descripción del punto</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Ubicacion</td>
+      <td>Link de Google Maps o coordenadas</td>
+      <td>Sí</td>
+    </tr>
+  </table>
+
+  <p><strong>Ejemplo de contenido:</strong></p>
+  <pre>Nombre,Detalles,Ubicacion
+Campo Los Alamos,20000 lts con bomba,https://maps.google.com/maps?q=-33.49,-64.36
+Tanque Municipal,15000 lts con molino,https://maps.google.com/maps?q=-33.51,-64.38</pre>
+
+  <h3>Pasos para importar</h3>
+  <ol>
+    <li>Tocar el botón <span class="button-example secondary">📄 CSV</span> en la parte inferior</li>
+    <li>Arrastrar el archivo o tocar <strong>"Seleccionar archivo"</strong></li>
+    <li>Verificar la vista previa de los puntos</li>
+    <li>Tocar <span class="button-example">Importar X puntos</span></li>
+  </ol>
+
+  <div class="image-placeholder">IMAGEN: Pantalla de importación CSV con vista previa de puntos</div>
+
+  <h2>6. Modo Sin Internet (Offline)</h2>
+  <p>La aplicación guarda los puntos en tu dispositivo para funcionar sin conexión a internet.</p>
+
+  <ul>
+    <li>Cuando no hay internet, verás un aviso amarillo en la parte inferior</li>
+    <li>Puedes buscar y ver todos los puntos guardados</li>
+    <li>Los cambios que hagas se sincronizarán automáticamente cuando vuelvas a tener conexión</li>
+  </ul>
+
+  <div class="warning">
+    <strong>⚠️ Importante:</strong> Para que el modo offline funcione, debes haber abierto la app al menos una vez con conexión a internet.
+  </div>
+
+  <div class="image-placeholder">IMAGEN: Indicador amarillo de modo offline</div>
+
+  <h2>7. Compartir el Grupo</h2>
+  <p>Para que otros compañeros accedan al mismo grupo de puntos:</p>
+
+  <ol>
+    <li>Compartir el link directo por WhatsApp: <br><code>holdmymap.vercel.app/CODIGO-GRUPO</code></li>
+    <li>O indicarles que ingresen el código en la pantalla inicial</li>
+  </ol>
+
+  <div class="tip">
+    <strong>💡 Tip:</strong> El link directo permite acceder inmediatamente al grupo sin tener que escribir el código.
+  </div>
+
+  <h2>8. Solución de Problemas</h2>
+
+  <table>
+    <tr>
+      <th>Problema</th>
+      <th>Solución</th>
+    </tr>
+    <tr>
+      <td>No carga la lista de puntos</td>
+      <td>Verificar conexión a internet y recargar la página</td>
+    </tr>
+    <tr>
+      <td>El botón "Ir con Maps" no funciona</td>
+      <td>Asegurarse de tener Google Maps instalado en el dispositivo</td>
+    </tr>
+    <tr>
+      <td>No aparece la opción de instalar la app</td>
+      <td>Usar Chrome en Android o Safari en iPhone</td>
+    </tr>
+    <tr>
+      <td>Los puntos no se sincronizan</td>
+      <td>Esperar a tener buena conexión WiFi o datos móviles</td>
+    </tr>
+    <tr>
+      <td>No puedo importar el CSV</td>
+      <td>Verificar que el archivo tenga las columnas correctas (Nombre, Detalles, Ubicacion)</td>
+    </tr>
+  </table>
+
+  <h2>9. Contacto y Soporte</h2>
+  <p>Para consultas o reportar problemas:</p>
+  <p><strong>[Completar con datos de contacto del cuartel o responsable]</strong></p>
+
+  <div class="footer">
+    <p>🗺️ <strong>HoldMyMap</strong></p>
+    <p>Desarrollado para Bomberos Voluntarios</p>
+  </div>
+
+</body>
+</html>
