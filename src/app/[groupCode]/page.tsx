@@ -72,7 +72,7 @@ export default function GroupPage({ params }: { params: Promise<{ groupCode: str
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#6B8E23] mx-auto"></div>
           <p className="mt-4 text-gray-500">Cargando grupo...</p>
         </div>
       </div>
@@ -88,9 +88,9 @@ export default function GroupPage({ params }: { params: Promise<{ groupCode: str
           <p className="text-gray-600 mb-4">{groupError}</p>
           <button
             onClick={() => router.push('/')}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+            className="px-4 py-2 bg-[#6B8E23] text-white rounded-lg hover:bg-[#5C7A1F]"
           >
-            Volver al inicio
+            Back to home
           </button>
         </div>
       </div>
@@ -109,9 +109,9 @@ export default function GroupPage({ params }: { params: Promise<{ groupCode: str
             </div>
             <div className="flex items-center gap-2">
               {syncing && (
-                <span className="text-xs text-blue-600 flex items-center gap-1">
-                  <div className="animate-spin rounded-full h-3 w-3 border-b border-blue-600"></div>
-                  Sincronizando
+                <span className="text-xs text-[#6B8E23] flex items-center gap-1">
+                  <div className="animate-spin rounded-full h-3 w-3 border-b border-[#6B8E23]"></div>
+                  Syncing
                 </span>
               )}
               <button
@@ -144,11 +144,11 @@ export default function GroupPage({ params }: { params: Promise<{ groupCode: str
         <div className="max-w-lg mx-auto flex gap-3">
           <Link
             href={`/${groupCode}/add`}
-            className="flex-1 py-3 px-4 bg-blue-600 text-white rounded-lg
-                       text-center font-medium hover:bg-blue-700 transition-colors
+            className="flex-1 py-3 px-4 bg-[#6B8E23] text-white rounded-lg
+                       text-center font-medium hover:bg-[#5C7A1F] transition-colors
                        flex items-center justify-center gap-2"
           >
-            <span>+</span> Agregar punto
+            <span>+</span> Add place
           </Link>
           <Link
             href={`/${groupCode}/import`}

@@ -102,7 +102,7 @@ export default function Home() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#6B8E23]"></div>
       </div>
     );
   }
@@ -112,8 +112,8 @@ export default function Home() {
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
           <div className="text-6xl mb-4">🗺️</div>
-          <h1 className="text-2xl font-bold text-gray-900">HoldMyMap</h1>
-          <p className="text-gray-600 mt-2">Puntos de agua para bomberos</p>
+          <h1 className="text-3xl font-bold text-[#556B2F]">HoldMyMap</h1>
+          <p className="text-gray-600 mt-2">Your favorite places</p>
         </div>
 
         <div className="bg-white rounded-xl shadow-sm border p-6">
@@ -131,17 +131,17 @@ export default function Home() {
                   setCreateMode(false);
                   setError('');
                 }}
-                placeholder="BOM-NORTE-2024"
+                placeholder="MY-GROUP-2024"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg
-                           focus:ring-2 focus:ring-blue-500 focus:border-transparent
-                           text-center text-lg uppercase tracking-wide"
+                           focus:ring-2 focus:ring-[#6B8E23] focus:border-transparent
+                           text-center text-lg uppercase tracking-wide text-black"
                 autoComplete="off"
                 autoCapitalize="characters"
               />
             </div>
 
             {error && (
-              <div className={`px-4 py-3 rounded-lg text-sm ${createMode ? 'bg-blue-50 text-blue-700' : 'bg-red-50 text-red-700'}`}>
+              <div className={`px-4 py-3 rounded-lg text-sm ${createMode ? 'bg-[#6B8E23]/10 text-[#556B2F]' : 'bg-red-50 text-red-700'}`}>
                 {error}
               </div>
             )}
@@ -156,9 +156,9 @@ export default function Home() {
                   id="groupName"
                   value={groupName}
                   onChange={(e) => setGroupName(e.target.value)}
-                  placeholder="Bomberos Voluntarios Norte"
+                  placeholder="My Places Group"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg
-                             focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                             focus:ring-2 focus:ring-[#6B8E23] focus:border-transparent text-black"
                 />
               </div>
             )}
@@ -191,11 +191,11 @@ export default function Home() {
               <button
                 type="submit"
                 disabled={checking}
-                className="w-full py-3 px-4 bg-blue-600 text-white rounded-lg
-                           hover:bg-blue-700 transition-colors font-medium
+                className="w-full py-3 px-4 bg-[#6B8E23] text-white rounded-lg
+                           hover:bg-[#5C7A1F] transition-colors font-medium
                            disabled:opacity-50"
               >
-                {checking ? 'Verificando...' : 'Entrar'}
+                {checking ? 'Loading...' : 'Enter'}
               </button>
             )}
           </form>

@@ -91,7 +91,7 @@ export function CSVImporter({ groupId, groupCode, onImport }: CSVImporterProps) 
               Arrastra un archivo CSV aquí o
             </p>
             <label className="cursor-pointer">
-              <span className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700
+              <span className="px-4 py-2 bg-[#6B8E23] text-white rounded-lg hover:bg-[#5C7A1F]
                               transition-colors inline-block">
                 Seleccionar archivo
               </span>
@@ -192,8 +192,8 @@ export function CSVImporter({ groupId, groupCode, onImport }: CSVImporterProps) 
                 <button
                   onClick={handleImport}
                   disabled={importing || preview.length === 0}
-                  className="flex-1 py-3 px-4 bg-blue-600 text-white rounded-lg
-                             hover:bg-blue-700 transition-colors font-medium
+                  className="flex-1 py-3 px-4 bg-[#6B8E23] text-white rounded-lg
+                             hover:bg-[#5C7A1F] transition-colors font-medium
                              disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {importing ? 'Importando...' : `Importar ${preview.length} puntos`}

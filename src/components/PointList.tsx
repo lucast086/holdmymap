@@ -18,7 +18,7 @@ export function PointList({ points, groupCode, onDelete, loading }: PointListPro
   if (loading) {
     return (
       <div className="flex flex-col items-center justify-center py-12">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#6B8E23]"></div>
         <p className="mt-4 text-gray-500">Cargando puntos...</p>
       </div>
     );
@@ -39,7 +39,7 @@ export function PointList({ points, groupCode, onDelete, loading }: PointListPro
               <p className="text-gray-500">No se encontraron resultados para &quot;{query}&quot;</p>
               <button
                 onClick={() => setQuery('')}
-                className="mt-2 text-blue-600 hover:underline"
+                className="mt-2 text-[#6B8E23] hover:underline"
               >
                 Limpiar búsqueda
               </button>

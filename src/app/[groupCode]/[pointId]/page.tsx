@@ -62,7 +62,7 @@ export default function EditPointPage({
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#6B8E23]"></div>
       </div>
     );
   }
@@ -75,7 +75,7 @@ export default function EditPointPage({
           <h2 className="text-xl font-bold text-gray-900 mb-2">Punto no encontrado</h2>
           <button
             onClick={() => router.push(`/${groupCode}`)}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+            className="px-4 py-2 bg-[#6B8E23] text-white rounded-lg hover:bg-[#5C7A1F]"
           >
             Volver a la lista
           </button>

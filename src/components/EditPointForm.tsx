@@ -102,7 +102,7 @@ export function EditPointForm({ point, groupCode, onSave, onDelete }: EditPointF
           value={name}
           onChange={(e) => setName(e.target.value)}
           className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2
-                     focus:ring-blue-500 focus:border-transparent"
+                     focus:ring-[#6B8E23] focus:border-transparent"
         />
       </div>
 
@@ -116,7 +116,7 @@ export function EditPointForm({ point, groupCode, onSave, onDelete }: EditPointF
           onChange={(e) => setDescription(e.target.value)}
           rows={2}
           className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2
-                     focus:ring-blue-500 focus:border-transparent"
+                     focus:ring-[#6B8E23] focus:border-transparent"
         />
       </div>
 
@@ -134,7 +134,7 @@ export function EditPointForm({ point, groupCode, onSave, onDelete }: EditPointF
               value={mapsUrl}
               onChange={(e) => handleMapsUrlChange(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2
-                         focus:ring-blue-500 focus:border-transparent text-sm"
+                         focus:ring-[#6B8E23] focus:border-transparent text-sm"
               placeholder="https://maps.google.com/maps?q=-33.49,-64.36"
             />
           </div>
@@ -150,7 +150,7 @@ export function EditPointForm({ point, groupCode, onSave, onDelete }: EditPointF
                 value={latitude}
                 onChange={(e) => setLatitude(e.target.value)}
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2
-                           focus:ring-blue-500 focus:border-transparent text-sm"
+                           focus:ring-[#6B8E23] focus:border-transparent text-sm"
               />
             </div>
             <div>
@@ -163,7 +163,7 @@ export function EditPointForm({ point, groupCode, onSave, onDelete }: EditPointF
                 value={longitude}
                 onChange={(e) => setLongitude(e.target.value)}
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2
-                           focus:ring-blue-500 focus:border-transparent text-sm"
+                           focus:ring-[#6B8E23] focus:border-transparent text-sm"
               />
             </div>
           </div>
@@ -183,8 +183,8 @@ export function EditPointForm({ point, groupCode, onSave, onDelete }: EditPointF
           <button
             type="submit"
             disabled={saving}
-            className="flex-1 py-3 px-4 bg-blue-600 text-white rounded-lg
-                       hover:bg-blue-700 transition-colors font-medium
+            className="flex-1 py-3 px-4 bg-[#6B8E23] text-white rounded-lg
+                       hover:bg-[#5C7A1F] transition-colors font-medium
                        disabled:opacity-50"
           >
             {saving ? 'Guardando...' : 'Guardar cambios'}

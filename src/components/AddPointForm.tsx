@@ -119,8 +119,8 @@ export function AddPointForm({ groupId, groupCode, onSave }: AddPointFormProps) 
           value={name}
           onChange={(e) => setName(e.target.value)}
           className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2
-                     focus:ring-blue-500 focus:border-transparent"
-          placeholder="Campo Los Alamos"
+                     focus:ring-[#6B8E23] focus:border-transparent"
+          placeholder="My favorite restaurant"
         />
       </div>
 
@@ -134,8 +134,8 @@ export function AddPointForm({ groupId, groupCode, onSave }: AddPointFormProps) 
           onChange={(e) => setDescription(e.target.value)}
           rows={2}
           className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2
-                     focus:ring-blue-500 focus:border-transparent"
-          placeholder="20000 lts de agua con bomba"
+                     focus:ring-[#6B8E23] focus:border-transparent"
+          placeholder="Notes about this place"
         />
       </div>
 
@@ -153,7 +153,7 @@ export function AddPointForm({ groupId, groupCode, onSave }: AddPointFormProps) 
               value={mapsUrl}
               onChange={(e) => handleMapsUrlChange(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2
-                         focus:ring-blue-500 focus:border-transparent text-sm"
+                         focus:ring-[#6B8E23] focus:border-transparent text-sm"
               placeholder="https://maps.google.com/maps?q=-33.49,-64.36"
             />
           </div>
@@ -201,7 +201,7 @@ export function AddPointForm({ groupId, groupCode, onSave }: AddPointFormProps) 
                 value={latitude}
                 onChange={(e) => setLatitude(e.target.value)}
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2
-                           focus:ring-blue-500 focus:border-transparent text-sm"
+                           focus:ring-[#6B8E23] focus:border-transparent text-sm"
                 placeholder="-33.4919"
               />
             </div>
@@ -215,7 +215,7 @@ export function AddPointForm({ groupId, groupCode, onSave }: AddPointFormProps) 
                 value={longitude}
                 onChange={(e) => setLongitude(e.target.value)}
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2
-                           focus:ring-blue-500 focus:border-transparent text-sm"
+                           focus:ring-[#6B8E23] focus:border-transparent text-sm"
                 placeholder="-64.3672"
               />
             </div>
@@ -230,16 +230,16 @@ export function AddPointForm({ groupId, groupCode, onSave }: AddPointFormProps) 
           className="flex-1 py-3 px-4 bg-gray-100 text-gray-700 rounded-lg
                      hover:bg-gray-200 transition-colors font-medium"
         >
-          Cancelar
+          Cancel
         </button>
         <button
           type="submit"
           disabled={saving}
-          className="flex-1 py-3 px-4 bg-blue-600 text-white rounded-lg
-                     hover:bg-blue-700 transition-colors font-medium
+          className="flex-1 py-3 px-4 bg-[#6B8E23] text-white rounded-lg
+                     hover:bg-[#5C7A1F] transition-colors font-medium
                      disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {saving ? 'Guardando...' : 'Guardar'}
+          {saving ? 'Saving...' : 'Save'}
         </button>
       </div>
     </form>

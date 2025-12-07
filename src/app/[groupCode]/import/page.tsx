@@ -59,7 +59,7 @@ export default function ImportPage({ params }: { params: Promise<{ groupCode: st
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#6B8E23]"></div>
       </div>
     );
   }
@@ -69,7 +69,7 @@ export default function ImportPage({ params }: { params: Promise<{ groupCode: st
       <div className="min-h-screen flex items-center justify-center p-4">
         <div className="text-center">
           <p className="text-gray-600 mb-4">Grupo no encontrado</p>
-          <button onClick={() => router.push('/')} className="text-blue-600 hover:underline">
+          <button onClick={() => router.push('/')} className="text-[#6B8E23] hover:underline">
             Volver al inicio
           </button>
         </div>

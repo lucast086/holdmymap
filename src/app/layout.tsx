@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HoldMyMap - Puntos de Agua",
-  description: "App para ubicar puntos de agua y recursos para bomberos voluntarios",
+  title: "HoldMyMap - Your Favorite Places",
+  description: "Save and navigate to your favorite places",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
@@ -29,7 +29,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  themeColor: "#2563eb",
+  themeColor: "#6B8E23",
 };
 
 export default function RootLayout({

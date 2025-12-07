@@ -1,11 +1,11 @@
 {
-  "name": "HoldMyMap - Puntos de Agua",
+  "name": "HoldMyMap - Your Favorite Places",
   "short_name": "HoldMyMap",
-  "description": "App para ubicar puntos de agua y recursos para bomberos voluntarios",
+  "description": "Save and navigate to your favorite places",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f9fafb",
-  "theme_color": "#2563eb",
+  "theme_color": "#6B8E23",
   "orientation": "portrait",
   "icons": [
     {

@@ -38,11 +38,11 @@ export function PointCard({ point, groupCode, onDelete }: PointCardProps) {
             href={mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white
-                       text-sm font-medium rounded-lg hover:bg-blue-700 active:bg-blue-800
+            className="inline-flex items-center justify-center px-4 py-2 bg-[#6B8E23] text-white
+                       text-sm font-medium rounded-lg hover:bg-[#5C7A1F] active:bg-[#4A6618]
                        transition-colors whitespace-nowrap"
           >
-            Ir con Maps
+            Go to Maps
           </a>
           <div className="flex gap-1">
             <Link
