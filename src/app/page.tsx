@@ -113,7 +113,7 @@ export default function Home() {
         <div className="text-center mb-8">
           <div className="text-6xl mb-4">🗺️</div>
           <h1 className="text-3xl font-bold text-[#556B2F]">HoldMyMap</h1>
-          <p className="text-gray-600 mt-2">Your favorite places</p>
+          <p className="text-gray-600 mt-2">Tus lugares favoritos</p>
         </div>
 
         <div className="bg-white rounded-xl shadow-sm border p-6">
@@ -131,7 +131,7 @@ export default function Home() {
                   setCreateMode(false);
                   setError('');
                 }}
-                placeholder="MY-GROUP-2024"
+                placeholder="MI-GRUPO-2024"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg
                            focus:ring-2 focus:ring-[#6B8E23] focus:border-transparent
                            text-center text-lg uppercase tracking-wide text-black"
@@ -156,7 +156,7 @@ export default function Home() {
                   id="groupName"
                   value={groupName}
                   onChange={(e) => setGroupName(e.target.value)}
-                  placeholder="My Places Group"
+                  placeholder="Mi grupo de lugares"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg
                              focus:ring-2 focus:ring-[#6B8E23] focus:border-transparent text-black"
                 />
@@ -195,7 +195,7 @@ export default function Home() {
                            hover:bg-[#5C7A1F] transition-colors font-medium
                            disabled:opacity-50"
               >
-                {checking ? 'Loading...' : 'Enter'}
+                {checking ? 'Cargando...' : 'Entrar'}
               </button>
             )}
           </form>
@@ -204,6 +204,13 @@ export default function Home() {
         <p className="text-center text-xs text-gray-500 mt-6">
           Comparte el link del grupo por WhatsApp
         </p>
+        <a
+          href="/manual/"
+          target="_blank"
+          className="block text-center text-xs text-gray-400 hover:text-gray-600 mt-2"
+        >
+          Manual de usuario
+        </a>
       </div>
     </main>
   );

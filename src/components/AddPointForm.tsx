@@ -120,7 +120,7 @@ export function AddPointForm({ groupId, groupCode, onSave }: AddPointFormProps) 
           onChange={(e) => setName(e.target.value)}
           className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2
                      focus:ring-[#6B8E23] focus:border-transparent"
-          placeholder="My favorite restaurant"
+          placeholder="Ej: Mi restaurante favorito"
         />
       </div>
 
@@ -135,7 +135,7 @@ export function AddPointForm({ groupId, groupCode, onSave }: AddPointFormProps) 
           rows={2}
           className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2
                      focus:ring-[#6B8E23] focus:border-transparent"
-          placeholder="Notes about this place"
+          placeholder="Notas sobre este lugar"
         />
       </div>
 
@@ -230,7 +230,7 @@ export function AddPointForm({ groupId, groupCode, onSave }: AddPointFormProps) 
           className="flex-1 py-3 px-4 bg-gray-100 text-gray-700 rounded-lg
                      hover:bg-gray-200 transition-colors font-medium"
         >
-          Cancel
+          Cancelar
         </button>
         <button
           type="submit"
@@ -239,7 +239,7 @@ export function AddPointForm({ groupId, groupCode, onSave }: AddPointFormProps) 
                      hover:bg-[#5C7A1F] transition-colors font-medium
                      disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {saving ? 'Saving...' : 'Save'}
+          {saving ? 'Guardando...' : 'Guardar'}
         </button>
       </div>
     </form>

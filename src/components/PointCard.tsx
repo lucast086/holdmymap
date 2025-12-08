@@ -42,7 +42,7 @@ export function PointCard({ point, groupCode, onDelete }: PointCardProps) {
                        text-sm font-medium rounded-lg hover:bg-[#5C7A1F] active:bg-[#4A6618]
                        transition-colors whitespace-nowrap"
           >
-            Go to Maps
+            Ir a Maps
           </a>
           <div className="flex gap-1">
             <Link

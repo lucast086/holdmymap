@@ -90,7 +90,7 @@ export default function GroupPage({ params }: { params: Promise<{ groupCode: str
             onClick={() => router.push('/')}
             className="px-4 py-2 bg-[#6B8E23] text-white rounded-lg hover:bg-[#5C7A1F]"
           >
-            Back to home
+            Volver al inicio
           </button>
         </div>
       </div>
@@ -111,7 +111,7 @@ export default function GroupPage({ params }: { params: Promise<{ groupCode: str
               {syncing && (
                 <span className="text-xs text-[#6B8E23] flex items-center gap-1">
                   <div className="animate-spin rounded-full h-3 w-3 border-b border-[#6B8E23]"></div>
-                  Syncing
+                  Sincronizando
                 </span>
               )}
               <button
@@ -148,7 +148,7 @@ export default function GroupPage({ params }: { params: Promise<{ groupCode: str
                        text-center font-medium hover:bg-[#5C7A1F] transition-colors
                        flex items-center justify-center gap-2"
           >
-            <span>+</span> Add place
+            <span>+</span> Agregar lugar
           </Link>
           <Link
             href={`/${groupCode}/import`}
@@ -159,12 +159,21 @@ export default function GroupPage({ params }: { params: Promise<{ groupCode: str
             <span>📄</span> CSV
           </Link>
         </div>
-        <button
-          onClick={handleChangeGroup}
-          className="w-full mt-3 text-sm text-gray-500 hover:text-gray-700"
-        >
-          Cambiar grupo
-        </button>
+        <div className="flex items-center justify-between mt-3">
+          <button
+            onClick={handleChangeGroup}
+            className="text-sm text-gray-500 hover:text-gray-700"
+          >
+            Cambiar grupo
+          </button>
+          <a
+            href="/manual/"
+            target="_blank"
+            className="text-xs text-gray-400 hover:text-gray-600"
+          >
+            Manual
+          </a>
+        </div>
       </div>
 
       {/* Spacer for fixed bottom */}

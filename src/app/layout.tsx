@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HoldMyMap - Your Favorite Places",
-  description: "Save and navigate to your favorite places",
+  title: "HoldMyMap - Tus lugares favoritos",
+  description: "Guarda y navega a tus lugares favoritos",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
